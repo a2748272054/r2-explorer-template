@@ -1,9 +1,8 @@
 import { R2Explorer } from "r2-explorer";
-
 export default R2Explorer({
-  readonly: false,
+  readonly: false,   // 设置为 false 才能上传文件
   basicAuth: {
-    username: BASIC_USER,  // 直接用绑定变量名
-    password: BASIC_PASS
+    username: BASIC_USER,  // Worker Secret
+    password: BASIC_PASS   // Worker Secret
   }
 });
